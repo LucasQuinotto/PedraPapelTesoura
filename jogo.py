@@ -103,7 +103,7 @@ class Jogo:
             elif carta_escolhida_jogador == "tesoura" and carta_escolhida_oponente == "tesoura":
                 print("Ambos os jogadores escolheram tesoura ...  O round empatou !!")
                 return "ninguém"
-            elif carta_escolhida_jogador == "tesoura" and carta_escolhida_oponente == "pedra":
+            elif carta_escolhida_jogador == "tesoura" and carta_escolhida_oponente == "pistola":
                 print("PEW PEW PEW !!  O oponente escolheu pistola ...  Você perdeu a rodada ...")
                 return "oponente"
 

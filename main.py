@@ -4,13 +4,13 @@ import jogador
 jogo_atual = jogo.Jogo()
 jogador = jogador.Jogador()
 
-numero_rodadas = 5
+numero_rodadas = 10
 placar_jogador = 0
 placar_oponente = 0
 
 baralho = ["pistola", "pistola", "pistola"]
 
-for i in range(9):
+for i in range(19):
     baralho.append("pedra")
     baralho.append("papel")
     baralho.append("tesoura")
