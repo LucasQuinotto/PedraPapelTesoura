@@ -5,8 +5,8 @@ jogo_atual = jogo.Jogo()
 jogador = jogador.Jogador()
 
 numero_rodadas = 5
-placar_jogador = 0
-placar_oponente = 0
+placar_jogador = 1
+placar_oponente = 4
 
 baralho = ["pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra",
            "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel",

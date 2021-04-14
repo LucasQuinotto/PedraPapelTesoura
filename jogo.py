@@ -8,9 +8,9 @@ class Jogo:
     def comecar_rodadas(self, baralho,numero_rodadas,ver_cartas, escolher_carta,placar_jogador,placar_oponente):
 
         print(Fore.LIGHTBLUE_EX)
-        print("\n IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI \n"
+        print("\n -I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-\n"
               "  BEM VINDO AO PEDRA, PAPEL, TESOURA E PISTOLA ROYALE !!\n"
-              " IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI=IOI")
+              " -I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-")
 
         for i in range(numero_rodadas):
 
@@ -69,13 +69,13 @@ class Jogo:
                 print("Ambos os jogadores escolheram pedra ...  O round empatou !!")
                 return "ninguém"
             elif carta_escolhida_jogador == "pedra" and carta_escolhida_oponente == "papel":
-                print("O oponente escolheu papel !!  Você perdeu a rodada ...")
+                print("O oponente escolheu papel ...  Você perdeu a rodada ...")
                 return "oponente"
             elif carta_escolhida_jogador == "pedra" and carta_escolhida_oponente == "tesoura":
                 print("O oponente escolheu tesoura !! Você ganhou a rodada !!")
                 return "jogador"
             elif carta_escolhida_jogador == "pedra" and carta_escolhida_oponente == "pistola":
-                print("PEW PEW PEW !!  O oponente escolheu pistola !!  Você perdeu a rodada ...")
+                print("PEW PEW PEW !!  O oponente escolheu pistola ...  Você perdeu a rodada ...")
                 return "oponente"
 
             elif carta_escolhida_jogador == "papel" and carta_escolhida_oponente == "pedra":
@@ -85,14 +85,14 @@ class Jogo:
                 print("Ambos os jogadores escolheram papel ...  O round empatou !!")
                 return "ninguém"
             elif carta_escolhida_jogador == "papel" and carta_escolhida_oponente == "tesoura":
-                print("O oponente escolheu tesoura !! Você perdeu a rodada ...")
+                print("O oponente escolheu tesoura ... Você perdeu a rodada ...")
                 return "oponente"
             elif carta_escolhida_jogador == "papel" and carta_escolhida_oponente == "pistola":
-                print("PEW PEW PEW !!  O oponente escolheu pistola !!  Você perdeu a rodada ...")
+                print("PEW PEW PEW !!  O oponente escolheu pistola ...  Você perdeu a rodada ...")
                 return "oponente"
 
             elif carta_escolhida_jogador == "tesoura" and carta_escolhida_oponente == "pedra":
-                print("O oponente escolheu pedra !!  Você perdeu a rodada ...")
+                print("O oponente escolheu pedra ...  Você perdeu a rodada ...")
                 return "oponente"
             elif carta_escolhida_jogador == "tesoura" and carta_escolhida_oponente == "papel":
                 print("O oponente escolheu papel !!  Você ganhou a rodada !!")
@@ -101,12 +101,18 @@ class Jogo:
                 print("Ambos os jogadores escolheram tesoura ...  O round empatou !!")
                 return "ninguém"
             elif carta_escolhida_jogador == "tesoura" and carta_escolhida_oponente == "pedra":
-                print("PEW PEW PEW !!  O oponente escolheu pistola !!  Você perdeu a rodada ...")
+                print("PEW PEW PEW !!  O oponente escolheu pistola ...  Você perdeu a rodada ...")
                 return "oponente"
 
-            elif carta_escolhida_jogador == "pistola" and carta_escolhida_oponente != "pistola":
-                print("PEW PEW PEW !! Você ganhou o round !!")
+            elif carta_escolhida_jogador == "pistola" and carta_escolhida_oponente == "pedra":
+                print("PEW PEW PEW !! O oponente escolheu pedra !!  Você ganhou o round !!")
+                return "jogador"
+            elif carta_escolhida_jogador == "pistola" and carta_escolhida_oponente == "papel":
+                print("PEW PEW PEW !! O oponente escolheu papel !!  Você ganhou o round !!")
+                return "jogador"
+            elif carta_escolhida_jogador == "pistola" and carta_escolhida_oponente == "tesoura":
+                print("PEW PEW PEW !! O oponente escolheu tesoura !!  Você ganhou o round !!")
                 return "jogador"
             elif carta_escolhida_jogador == "pistola" and carta_escolhida_oponente == "pistola":
-                print("PEW PEW PEW PEW PEW !! Ambos os jogadores escolheram pistola, o round empata !!")
+                print("PEW PEW PEW PEW PEW !! Ambos os jogadores escolheram pistola ... O oound empatou !!")
                 return "ninguém"
