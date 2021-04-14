@@ -8,9 +8,9 @@ class Jogo:
     def comecar_rodadas(self, baralho,numero_rodadas,ver_cartas, escolher_carta,placar_jogador,placar_oponente):
 
         print(Fore.LIGHTBLUE_EX)
-        print("\n -I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-\n"
-              "  BEM VINDO AO PEDRA, PAPEL, TESOURA E PISTOLA ROYALE !!\n"
-              " -I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-")
+        print("\n -I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-\n" +
+              Fore.LIGHTCYAN_EX + "  BEM VINDO AO PEDRA, PAPEL, TESOURA E PISTOLA ROYALE !!\n" +
+              Fore.LIGHTBLUE_EX + " -I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-I=O=I-")
 
         for i in range(numero_rodadas):
 
@@ -21,7 +21,7 @@ class Jogo:
                   f" \t\tJOGADOR: {placar_jogador}\n"
                   f" \t\t\t\tOPONENTE: {placar_oponente}")
             print(Fore.LIGHTBLUE_EX)
-            print(f" VOCÊ ESTA NO {i+1}° ROUND !!")
+            print(" VOCÊ ESTA NO " + Fore.LIGHTCYAN_EX + f"{i+1}°" + Fore.LIGHTBLUE_EX + " ROUND !!")
             cartas_jogador = self.distribuir_cartas_jogador(baralho,[])
             cartas_oponente = self.distribuir_cartas_oponente(baralho,[])
 
