@@ -4,14 +4,17 @@ import jogador
 jogo_atual = jogo.Jogo()
 jogador = jogador.Jogador()
 
-numero_rodadas = 5
-placar_jogador = 1
-placar_oponente = 4
+numero_rodadas = 10
+placar_jogador = 0
+placar_oponente = 0
 
 baralho = ["pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra",
            "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel",
            "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura",
-           "pistola", "pistola", "pistola"]
+           "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra",
+           "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel",
+           "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura",
+           "pedra", "papel", "tesoura", "pistola", "pistola", "pistola"]
 
 
 jogo_atual.comecar_rodadas(baralho, numero_rodadas, jogador.apresentar_cartas,

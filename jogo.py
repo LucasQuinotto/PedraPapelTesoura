@@ -28,12 +28,15 @@ class Jogo:
             while vencedor_rodada == "ninguém":
                 ver_cartas(cartas_jogador)
                 carta_escolhida_jogador = escolher_carta(cartas_jogador)
-                if "pistola" in cartas_oponente:
+                if carta_escolhida_jogador == "nada":
+                    break
+                elif "pistola" in cartas_oponente:
                     carta_escolhida_oponente = "pistola"
                     cartas_oponente.remove("pistola")
                 else:
                     carta_escolhida_oponente = cartas_oponente[0]
                     cartas_oponente.pop(0)
+
                 vencedor_rodada = self.definir_ganhador_rodada(carta_escolhida_jogador,carta_escolhida_oponente)
                 if vencedor_rodada == "jogador":
                     placar_jogador += 1

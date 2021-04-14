@@ -7,9 +7,13 @@ class Jogador:
 
     def escolher_carta_jogador(self, cartas_jogador):
         while True:
-            carta_escolhida = input("\nESCOLHA UMA CARTA PARA JOGAR: ")
-            if carta_escolhida not in cartas_jogador:
-                print("Esta carta não existe !!  Você esta maluco ?!")
+            if len(cartas_jogador) == 0:
+                print("Vish, acabaram as cartas ... a Rodada empata !!")
+                return "nada"
             else:
-                cartas_jogador.remove(carta_escolhida)
-                return carta_escolhida
+                carta_escolhida = input("\nESCOLHA UMA CARTA PARA JOGAR: ")
+                if carta_escolhida not in cartas_jogador:
+                    print("Esta carta não existe !!  Você esta maluco ?!")
+                else:
+                    cartas_jogador.remove(carta_escolhida)
+                    return carta_escolhida
