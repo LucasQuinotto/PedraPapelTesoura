@@ -4,17 +4,16 @@ import jogador
 jogo_atual = jogo.Jogo()
 jogador = jogador.Jogador()
 
-numero_rodadas = 10
+numero_rodadas = 5
 placar_jogador = 0
 placar_oponente = 0
 
-baralho = ["pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra",
-           "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel",
-           "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura",
-           "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra", "pedra",
-           "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel", "papel",
-           "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura", "tesoura",
-           "pedra", "papel", "tesoura", "pistola", "pistola", "pistola"]
+baralho = ["pistola", "pistola", "pistola"]
+
+for i in range(9):
+    baralho.append("pedra")
+    baralho.append("papel")
+    baralho.append("tesoura")
 
 
 jogo_atual.comecar_rodadas(baralho, numero_rodadas, jogador.apresentar_cartas,

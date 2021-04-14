@@ -44,9 +44,9 @@ class Jogo:
                     placar_oponente += 1
 
         print(Fore.LIGHTCYAN_EX)
-        print(f"\n  PLACAR FINAL:"
-              f" \t\tJOGADOR: {placar_jogador}\n"
-              f" \t\t\t\t\t\tOPONENTE: {placar_oponente}")
+        print(f"\n\t  PLACAR FINAL:"
+              f"  \tJOGADOR: {placar_jogador}\n"
+              f"  \t\t\t\t\t\tOPONENTE: {placar_oponente}")
 
 
     def distribuir_cartas_jogador(self, baralho, mao_jogador=None):
@@ -117,5 +117,5 @@ class Jogo:
                 print("PEW PEW PEW !! O oponente escolheu tesoura !!  Você ganhou o round !!")
                 return "jogador"
             elif carta_escolhida_jogador == "pistola" and carta_escolhida_oponente == "pistola":
-                print("PEW PEW PEW PEW PEW !! Ambos os jogadores escolheram pistola ... O oound empatou !!")
+                print("PEW PEW PEW PEW PEW !! Ambos os jogadores escolheram pistola ... O round empatou !!")
                 return "ninguém"
